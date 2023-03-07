@@ -9,6 +9,8 @@ import WorkerDrawerNavigator from './WorkerDrawerNavigator';
 import Profile from '../screens/Profile';
 import Chat from '../screens/Chat';
 import DetailTask from '../screens/worker/DetailTask';
+import CompanyDrawerNavigator from './CompanyDrawerNavigator';
+import DetailWorker from '../screens/company/DetailWorker';
 
 
 
@@ -29,7 +31,9 @@ const RootNavigator = () => {
                 {/* Worker Navigator */}
                 <Stack.Screen options={{ headerShown: false }} name='WorkerStackScreen' component={WorkerDrawerNavigator} />
                 <Stack.Screen options={{ headerShown: false }} name="WorkerDetailTask" component={DetailTask} />
-
+                {/* Company Navigator */}
+                <Stack.Screen options={{ headerShown: false }} name='CompanyStackScreen' component={CompanyDrawerNavigator} />
+                <Stack.Screen options={{ drawerLavel: "Detail Pekerja", title: "Detail Pekerja" }} name="CompanyDetailWorker" component={DetailWorker} />
             </Stack.Navigator>
         </NavigationContainer>
     )

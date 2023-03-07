@@ -17,6 +17,9 @@ const Login = ({ navigation, route }: INavigation) => {
     const [visiblePassword, setVisiblePassword] = React.useState<boolean>(true)
     const { role } = route.params
 
+    console.log(role, 'select role')
+
+
     return (
         <SafeAreaView style={styles.container}>
             <ScrollView
@@ -98,7 +101,7 @@ const Login = ({ navigation, route }: INavigation) => {
                                 <Button
                                     title='Login'
                                     color={colors.lightBlue}
-                                    onPress={() => navigation.navigate('WorkerStackScreen')}
+                                    onPress={() => navigation.navigate(role === 'USER' ? 'WorkerStackScreen' : "CompanyStackScreen")}
                                 ></Button>
                             </View>
                         )}

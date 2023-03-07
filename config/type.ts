@@ -85,6 +85,13 @@ export interface IRegisterTypes{
     photo_certificate?: string 
 }
 
+export interface newBank{
+typeAccount: string,
+account_number: string,
+bank_name: string,
+name: string
+}
+
 export class TaskWorkerTypes{
   id: string = '';
   title: string = '';

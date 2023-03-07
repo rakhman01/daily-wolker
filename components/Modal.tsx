@@ -42,7 +42,7 @@ const CardModal = (props: ICartModal) => {
                 onPress={() => setModalVisible(true)}>
                 {props.butonIcon === undefined ? null :
                     <Icon name={props.butonIcon} size={28} color={font.color.black} />}
-                <Text style={styles.textStyle}>{props.buttontitle}</Text>
+                <Text style={styles.opentextStyle}>{props.buttontitle}</Text>
             </Pressable>
         </View>
     )
@@ -82,12 +82,18 @@ const styles = StyleSheet.create({
     buttonOpen: {
         // flex: 1,
         justifyContent: 'center',
-        backgroundColor: colors.white,
+        // backgroundColor: colors.gray,
     },
     buttonClose: {
-        backgroundColor: '#2196F3',
+        marginTop: 8,
+        backgroundColor: colors.blue,
     },
     textStyle: {
+        color: font.color.white,
+        fontWeight: 'bold',
+        textAlign: 'center',
+    },
+    opentextStyle: {
         color: font.color.gray,
         fontWeight: 'bold',
         textAlign: 'center',

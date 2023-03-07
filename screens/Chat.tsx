@@ -5,7 +5,7 @@ import { colors } from '../config/constant'
 
 const Chat = () => {
     return (
-        <SafeAreaView>
+        <SafeAreaView style={styles.container}>
             <View>
                 <Text style={{ color: colors.gray }}>chat</Text>
             </View>

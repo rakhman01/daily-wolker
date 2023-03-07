@@ -1,6 +1,6 @@
 import React from 'react'
 import { View, Text } from 'react-native'
-import { colors, dimensions, font } from '../config/constant'
+import { dimensions, font } from '../config/constant'
 import Icon from 'react-native-vector-icons/FontAwesome'
 import Mail from 'react-native-vector-icons/Ionicons'
 
